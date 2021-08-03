@@ -186,20 +186,47 @@
                                                
                                                
 
+                                                <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <!-- <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">Video Call</h4>
+                                        </div> -->
+                                        <div class="modal-body">
+                                        <video id="video" width="640" height="480" autoplay></video>
+                                            <!-- <button id="snap">Snap Photo</button> -->
+                                            <!-- <canvas id="canvas" width="640" height="480"></canvas> -->
+                                        </div>
+
+                                        <div class="modal-footer">
+                                       
+                                        <button class="btn btn-success  dim" type="button"><i class="fa fa-microphone"></i></button>
+                                        <button class="btn btn-danger  dim " type="button"><i class="fa fa-window-close"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
 
                                                 <div class="col-md-6">
                                                     <div class="chat-users">
 
-
+                                                    
                                                         <div class="users-list">
                                                             <div class="chat-user">
                                                                 <img class="chat-avatar" src="img/a4.jpg" alt="" >
                                                                 <div class="chat-user-name">
                                                                     <a href="#">Monica Smith</a>
                                                                     <button class="btn btn-success btn-circle float-right ml-2" type="button"><i class="fa fa-phone"></i></button>
-                                                                    <button class="btn btn-success btn-circle float-right ml-2" type="button"><i class="fa fa-video-camera"></i></button>
+
+                                                                    <button class="btn btn-success btn-circle float-right ml-2" type="button" data-toggle="modal" data-target="#myModal5" ><i class="fa fa-video-camera"></i></button>
+
                                                                     <button type="button" class="btn btn-primary btn-xs float-right ml-2">Details</button>
                                                                     <button type="button" class="btn btn-success btn-xs float-right ml-2">Supervisor</button>
+                                                                    
                                                                 </div>
                                                                
                                                             </div>
@@ -375,6 +402,34 @@
             }
         }
     </script>
+
+<script>
+    // Grab elements, create settings, etc.
+var video = document.getElementById('video');
+
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Not adding `{ audio: true }` since we only want video now
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+        //video.src = window.URL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    });
+}
+</script>
+
+
+<script>
+    var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+var video = document.getElementById('video');
+
+// Trigger photo take
+document.getElementById("snap").addEventListener("click", function() {
+	context.drawImage(video, 0, 0, 640, 480);
+});
+</script>
+
 </body>
 
 </html>
