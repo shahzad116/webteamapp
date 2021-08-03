@@ -202,7 +202,7 @@
                                         <div class="modal-footer">
                                        
                                         <button class="btn btn-success  dim" type="button"><i class="fa fa-microphone"></i></button>
-                                        <button class="btn btn-danger  dim " type="button"><i class="fa fa-window-close"></i></button>
+                                        <button class="btn btn-danger  dim " type="button"  data-dismiss="modal"><i class="fa fa-window-close"></i></button>
                                         </div>
                                     </div>
                                 </div>
