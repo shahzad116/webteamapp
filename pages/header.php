@@ -25,7 +25,7 @@
                     </li>
 
                     <li class="active">
-                        <a href="employees.php"><i class="fa fa-th-large"></i> <span class="nav-label">Employees</span></a>
+                        <a href="company.php"><i class="fa fa-th-large"></i> <span class="nav-label">Company</span></a>
 
                     </li>
                    
