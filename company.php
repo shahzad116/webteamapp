@@ -38,18 +38,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="wrapper wrapper-content animated fadeInUp">
-
-                   
-                        <!-- code -->
-
+                    <!-- code -->
+                    <div class="row">
 
 
-
-
-                        <div class="row">
-
-
-                        <div class="col-lg-5">
+                <div class="col-lg-4">
                     <div class="ibox ">
                         <div class="ibox-title">
                             <h5>User List For Communication</h5>
@@ -109,7 +102,7 @@
 
 
 
-            <div class="col-lg-7">
+            <div class="col-lg-8">
                 <div class="ibox ">
                         <div class="ibox-content">
                         <div class="row">
@@ -126,7 +119,7 @@
 
                                             <div class="row">
 
-                                                <div class="col-md-7">
+                                                <div class="col-md-6">
 
                                                     
 
@@ -194,7 +187,7 @@
                                                
 
 
-                                                <div class="col-md-5">
+                                                <div class="col-md-6">
                                                     <div class="chat-users">
 
 
