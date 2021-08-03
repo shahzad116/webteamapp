@@ -52,6 +52,16 @@
                                     <div class="form-group"><label>Compnay Contact</label>
                                     <input type="tel" class="form-control"  placeholder="Enter Contact">
                                     </div>
+
+                                    <div class="form-group"><label>Status</label> 
+                                    <select class="form-control m-b" name="totalusers">
+                                        <option>Select Status</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Pending">Pending</option>
+                                        <option value="Proporsal">Proporsal</option>
+                                        
+                                    </select>
+                                </div>
                                     <div class="form-group row">
                                     <div class="col-lg-offset-2 col-lg-10">
                                         <button class="btn btn-sm btn-green" type="submit">Create</button>
@@ -82,12 +92,22 @@
                                         <option value="30">30</option>
                                     </select>
                                 </div>
-                                <div class="form-group"><label>Select Payment</label> 
+                                <div class="form-group"><label>Payment</label> 
                                     <select class="form-control m-b" name="totalusers">
                                         <option>Select Payment</option>
                                         <option value="Paypal">Paypal</option>
                                         <option value="Credit Card">Credit Card</option>
                                         <option value="Bank Transfer">Bank Transfer</option>
+                                        
+                                    </select>
+                                </div>
+
+                                <div class="form-group"><label>Status</label> 
+                                    <select class="form-control m-b" name="totalusers">
+                                        <option>Select Status</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Pending">Pending</option>
+                                        <option value="Proporsal">Proporsal</option>
                                         
                                     </select>
                                 </div>
