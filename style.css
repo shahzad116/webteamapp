@@ -4485,6 +4485,16 @@ video {
   margin-bottom: 0;
 }
 /* MODAL */
+
+#canvas{
+  display:none;
+}
+
+#download{
+  display:none;
+}
+
+
 .modal-content {
   background-clip: padding-box;
   background-color: #FFFFFF;
