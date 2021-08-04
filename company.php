@@ -185,8 +185,9 @@
                                                 </div>
                                                
                                                
+                        <!-- Modal popip for video -->
 
-                                                <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
+                      <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <!-- <div class="modal-header">
@@ -196,17 +197,21 @@
                                         <div class="modal-body">
                                         <video id="video" width="640" height="480" autoplay></video>
                                             <!-- <button id="snap">Snap Photo</button> -->
-                                            <!-- <canvas id="canvas" width="640" height="480"></canvas> -->
+                                             <canvas id="canvas" width="640" height="480"></canvas>
                                         </div>
 
                                         <div class="modal-footer">
                                        
+                                        <button class="btn btn-info  dim" type="button" id="download"><i class="fa fa-download"></i></button>
+                                        <button class="btn btn-info  dim" type="button" id="snap"><i class="fa fa-picture-o"></i></button>
                                         <button class="btn btn-success  dim" type="button"><i class="fa fa-microphone"></i></button>
                                         <button class="btn btn-danger  dim " type="button"  data-dismiss="modal"><i class="fa fa-window-close"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                    <!-- Modal popip for video -->
 
 
 
@@ -428,6 +433,20 @@ var video = document.getElementById('video');
 document.getElementById("snap").addEventListener("click", function() {
 	context.drawImage(video, 0, 0, 640, 480);
 });
+</script>
+
+<script>
+
+$("#snap").click(function(){
+  $("#video").hide();
+  $("#canvas").show();
+  $("#snap").hide();
+  $("#download").show();
+  
+
+
+});
+
 </script>
 
 </body>
