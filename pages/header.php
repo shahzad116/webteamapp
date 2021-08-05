@@ -11,7 +11,7 @@
                         </div>
                     </li>
                     <li class="active">
-                        <a href="index.php"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
+                        <a href="dashboard.php"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
 
                     </li>
                     <li class="active">
