@@ -214,6 +214,31 @@
                     <!-- Modal popip for video -->
 
 
+                     <!-- Modal popip for video -->
+
+                     <div class="modal inmodal fade" id="myModal4" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                       
+                                        <div class="modal-body">
+                                        
+                                        <h1>Audio call</h1>
+                                       
+                                           
+                                        </div>
+
+                                        <div class="modal-footer">
+                                       
+                                        <button class="btn btn-success  dim" type="button"><i class="fa fa-microphone"></i></button>
+                                        <button class="btn btn-danger  dim " type="button"  data-dismiss="modal"><i class="fa fa-window-close"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <!-- Modal popip for video -->
+
+
 
 
                                                 <div class="col-md-6">
@@ -225,7 +250,7 @@
                                                                 <img class="chat-avatar" src="img/a4.jpg" alt="" >
                                                                 <div class="chat-user-name">
                                                                     <a href="#">Monica Smith</a>
-                                                                    <button class="btn btn-success btn-circle float-right ml-2" type="button"><i class="fa fa-phone"></i></button>
+                                                                    <button class="btn btn-success btn-circle float-right ml-2" type="button" data-toggle="modal" data-target="#myModal4"><i class="fa fa-phone"></i></button>
 
                                                                     <button class="btn btn-success btn-circle float-right ml-2" type="button" data-toggle="modal" data-target="#myModal5" ><i class="fa fa-video-camera"></i></button>
 
@@ -443,8 +468,6 @@ $("#snap").click(function(){
   $("#snap").hide();
   $("#download").show();
   
-
-
 });
 
 </script>

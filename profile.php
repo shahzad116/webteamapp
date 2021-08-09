@@ -43,7 +43,14 @@
                     <div class="ibox ">
                         <div class="ibox-title">
                             <h5>Profile Detail</h5>
+                            <div class="ibox-tools">
+                                <a href="edit-profile.php?id=5">
+                                <button type="button" class="btn btn-primary btn-xs">Edit Profile</button>
+                                </a>
+                               
+                            </div>
                         </div>
+                        
                         <div>
                         <div class="ibox-content text-center">
                                 <h1>Nicki Smith</h1>
@@ -64,18 +71,15 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
                                 </p>
                                 <div class="row m-t-lg">
-                                    <div class="col-md-4">
-                                        <span class="bar">5,3,9,6,5,9,7,3,5,2</span>
-                                        <h5><strong>169</strong> Posts</h5>
+                                    <div class="col-md-6">
+                                        <span class="bar">Phone</span>
+                                        <h5><strong>Phone: 123 456 7</strong></h5>
                                     </div>
-                                    <div class="col-md-4">
-                                        <span class="line">5,3,9,6,5,9,7,3,5,2</span>
-                                        <h5><strong>28</strong> Following</h5>
+                                    <div class="col-md-6">
+                                        <span class="bar">Email: </span>
+                                        <h5><strong>Email: example@webteamapp.com</strong></h5>
                                     </div>
-                                    <div class="col-md-4">
-                                        <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span>
-                                        <h5><strong>240</strong> Followers</h5>
-                                    </div>
+                                  
                                 </div>
                                
                                 <div class="ibox">
