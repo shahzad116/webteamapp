@@ -9,6 +9,8 @@
                         <div class="logo-element">
                             Team
                         </div>
+
+                       
                     </li>
                     <li class="active">
                         <a href="dashboard.php"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
@@ -21,6 +23,10 @@
 
                     <li class="active">
                         <a href="projects.php"><i class="fa fa-th-large"></i> <span class="nav-label">Projects</span></a>
+
+                    </li>
+                    <li class="active">
+                        <a href="request-projects.php"><i class="fa fa-th-large"></i> <span class="nav-label">Request Projects</span></a>
 
                     </li>
 
@@ -149,9 +155,23 @@
 
 
                 <li>
-                    <a href="login.html">
+
+                <div class="dropdown profile-element">
+                       
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                            <span class="text-muted text-xs block">User name <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs" x-placement="bottom-start" style="position: absolute; top: 91px; left: 0px; will-change: top, left;">
+                            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                            <li><a class="dropdown-item" href="projects.php">Projects</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.php">Logout</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <a href="index.php">
                         <i class="fa fa-sign-out"></i> Log out
-                    </a>
+                    </a> -->
                 </li>
             </ul>
 
